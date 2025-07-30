@@ -1,0 +1,106 @@
+.note-editor {
+  padding: 2.1rem 2.2rem;
+  background: var(--surface, #fff);
+  min-height: 100%;
+  border-radius: 9px;
+  box-shadow: var(--shadow, 0 2px 8px rgba(25, 118, 210, 0.08));
+  margin-top: 2.4rem;
+  width: 100%;
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.edit-note-btn {
+  position: absolute;
+  right: 2.2rem;
+  top: 2.2rem;
+  background: var(--accent, #ffc107);
+  border: none;
+  border-radius: 6px;
+  color: #24292f;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4em 1em;
+  cursor: pointer;
+}
+.edit-note-btn:hover {
+  background: #ffdb58;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.note-title-input {
+  font-size: 1.21rem;
+  font-weight: 600;
+  padding: 0.38rem 0.8rem;
+  border-radius: 7px;
+  border: 1px solid var(--border, #e0e0e0);
+  background: var(--bg, #f5f7fa);
+  color: var(--text, #24292f);
+  width: 100%;
+  outline: none;
+  transition: border 0.2s;
+}
+.note-title-input:focus {
+  border: 1.5px solid var(--primary, #1976d2);
+}
+.note-content-input {
+  font-size: 1.021rem;
+  min-height: 340px;
+  resize: vertical;
+  border-radius: 7px;
+  padding: 1rem 0.8rem;
+  border: 1px solid var(--border, #e0e0e0);
+  background: var(--bg, #f5f7fa);
+  color: var(--text, #24292f);
+  width: 100%;
+}
+
+.note-form-error {
+  color: #b71c1c;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.note-editor-actions {
+  display: flex;
+  gap: 0.8em;
+  margin-top: 1.1em;
+}
+.btn-primary {
+  background: var(--primary, #1976d2);
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.43em 1.45em;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.btn-primary:hover, .btn-primary:focus { background: var(--primary-dark, #115293); }
+.btn-secondary {
+  background: var(--secondary, #90caf9);
+  color: #24292f;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 6px;
+  padding: 0.4em 1.2em;
+  cursor: pointer;
+}
+.btn-danger {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 6px;
+  padding: 0.43em 1.1em;
+  cursor: pointer;
+}
+.btn-danger:hover { background: #c0392b; }
